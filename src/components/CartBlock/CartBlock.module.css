@@ -1,0 +1,16 @@
+.cartBlock {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cartBlockIcon {
+  cursor: pointer;
+  position: relative;
+}
+
+.CartBlockTotalPrice {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
