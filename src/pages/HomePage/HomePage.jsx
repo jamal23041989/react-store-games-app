@@ -68,7 +68,7 @@ export const HomePage = () => {
   return (
     <div className={styles.homePage}>
       {GAMES.map(game => (
-        <GameItem key={game.id} {...game} />
+        <GameItem key={game.id} game={game} />
       ))}
     </div>
   )

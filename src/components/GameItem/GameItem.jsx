@@ -3,7 +3,9 @@ import { GameCover } from '../GameCover'
 import { GameGenre } from '../GameGenre'
 import styles from './GameItem.module.css'
 
-export const GameItem = ({ image, title, genres, price, video, id, description }) => {
+export const GameItem = ({ game }) => {
+  const { image, title, genres, price, video, id, description } = game
+
   return (
     <div className={styles.gameItem}>
       <GameCover image={image} />
@@ -16,7 +18,7 @@ export const GameItem = ({ image, title, genres, price, video, id, description }
         </div>
         <div className={styles.gameItemDescription}>{description}</div>
         <div className={styles.gameItemBuy}>
-          <GameBuy price={price} />
+          <GameBuy price={price} game={game} />
         </div>
       </div>
     </div>
