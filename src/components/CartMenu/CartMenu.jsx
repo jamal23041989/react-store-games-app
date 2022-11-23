@@ -9,7 +9,7 @@ export const CartMenu = ({ items, onClick }) => {
   return (
     <div className={styles.cartMenu}>
       <div className={styles.cartMenuGamesList}>
-        {items.length > 0 ? items.map(game => <CartItem key={game.title} game={game} />) : 'Корзина пуста'}
+        {items.length > 0 ? items.map(game => <CartItem key={game.title} {...game} />) : 'Корзина пуста'}
       </div>
       {items.length > 0 ? (
         <div className={styles.cartMenuArrange}>

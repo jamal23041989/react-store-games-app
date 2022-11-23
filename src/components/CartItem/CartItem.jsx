@@ -1,8 +1,6 @@
 import styles from './CartItem.module.css'
 
-export const CartItem = ({ game }) => {
-  const { title, price, id } = game
-
+export const CartItem = ({ title, price, id }) => {
   return (
     <div className={styles.cartItem}>
       <span>{title}</span>

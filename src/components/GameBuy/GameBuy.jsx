@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import styles from './GameBuy.module.css'
 import { deleteItemFromCart, setItemsCart } from '../../redux/slices/Cart/cartSlice'
 
-export const GameBuy = ({ price, game }) => {
+export const GameBuy = ({ game }) => {
   const dispatch = useDispatch()
   const items = useSelector(state => state.cartReducer.itemsInCart)
   const isItemInCart = items.some(item => item.id === game.id)
@@ -21,7 +21,7 @@ export const GameBuy = ({ price, game }) => {
 
   return (
     <div className={styles.gameBuy}>
-      <span className={styles.gameBuyPrice}>{price} руб.</span>
+      <span className={styles.gameBuyPrice}>{game.price} руб.</span>
       <Button type={isItemInCart ? 'secondary' : 'primary'} onClick={onHandleClick}>
         {isItemInCart ? 'Убрать из корзины' : 'В корзину'}
       </Button>

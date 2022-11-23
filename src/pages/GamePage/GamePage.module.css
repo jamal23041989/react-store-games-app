@@ -1,0 +1,27 @@
+.gamePage {
+}
+
+.gamePageTitle {
+}
+
+.gamePageContent {
+  display: flex;
+}
+
+.gamePageLeft {
+  width: 70%;
+}
+
+.gamePageRight {
+  width: 30%;
+}
+
+.gamePageBuyGame {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.gamePageSecondaryText {
+  color: rgb(80, 82, 84);
+}

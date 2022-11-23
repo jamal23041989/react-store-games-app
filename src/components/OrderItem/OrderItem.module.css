@@ -1,0 +1,23 @@
+.orderItem {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.orderItemCover {
+  width: 200px;
+  margin-right: 30px;
+}
+
+.orderItemTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.orderItemPrice {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.cartItemDeleteIcon {
+}
